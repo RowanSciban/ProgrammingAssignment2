@@ -1,8 +1,12 @@
 ## Rowan Assignment 2
-## Put comments here that give an overall description of what your
-## functions do
 
-## Caches a matrix
+
+## MakeCacheMatrix will take a matrix I define and put it into memory 
+## fucntion(x = matrix()) defines x as a matrix input
+## Set function sets the matrix
+## Get function calls the matrix
+## Setinverse sets the inverse of the matrix
+## Getinverse calls the inverse of the matrix
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
@@ -19,7 +23,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Passes in memory matrix and solves it
+## Passes in the chached matrix and solves it to get the inverse
+## First tries to pass the matrix that is called in the cachesolve()
+## If it is NULL then it looks for the cached matrix
+## Solves and returns the inverse of the passed/cached matrix
 
 cacheSolve <- function(x, ...) {
                 m <- x$getinverse()
